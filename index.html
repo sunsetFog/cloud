@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>价格地图</title>
+    <link rel="shortcut icon" href="./static/favicon.ico"  type="image/x-icon">
+    <!-- <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=CFFiHT5dejkMz0DEVwGZCac1heaxOwUV"></script> -->
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值"></script> -->
+    <!-- <script>
+      AMap.plugin('AMap.Geolocation', function() {
+        var gaoDeGeo = new AMap.Geolocation({
+              enableHighAccuracy: true,//是否使用高精度定位，默认:true
+              timeout: 10000,          //超过10秒后停止定位，默认：5s
+              buttonPosition:'RB',    //定位按钮的停靠位置
+              buttonOffset: new AMap.Pixel(10, 20),//定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
+              zoomToAccuracy: true,   //定位成功后是否自动调整地图视野到定位点
+
+          });
+          gaoDeGeo.getCurrentPosition(function(status,result){
+              if(status=='complete'){
+                  console.log('gaode-sucess=', result)
+              }else{
+                  console.log('gaode-error=', result)
+              }
+          });
+      })
+    </script> -->
+
+    <!-- <script>
+      navigator.geolocation.getCurrentPosition(function(result){
+        console.log('666-sucess=', result)
+      },function(error){
+        console.log('666-error==',error)
+      })
+    </script> -->
+
+<!-- <script>
+  getLocation()
+  function getLocation(){ 
+  var options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+  };
+  if (navigator.geolocation){ //用浏览器获取坐标地址
+  navigator.geolocation.getCurrentPosition(showPosition,showError,options); 
+  }else{ 
+  console.log("浏览器不支持地理定位。");
+  } 
+  } 
+
+  //获取浏览器GPS成功
+  function showPosition(position){ 
+    console.log('navigator-success', position)
+  } 
+
+
+  //获取失败，失败后用百度地图自带的方法，但是定位会不准
+  function showError(error){
+  console.log('navigator-error', error) 
+  } 
+</script> -->
+    <!-- built files will be auto injected -->
+  </body>
+</html>
